@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 set -e
 
 if [ -z ${FLUENT_ELASTICSEARCH_SED_DISABLE} ] ; then
