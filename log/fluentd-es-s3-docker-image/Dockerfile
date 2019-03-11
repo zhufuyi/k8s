@@ -35,6 +35,8 @@ COPY ./conf/fluent.conf /fluentd/etc/
 COPY ./conf/systemd.conf /fluentd/etc/
 COPY ./conf/kubernetes.conf /fluentd/etc/
 RUN touch /fluentd/etc/disable.conf
+# can rw config
+RUN chmod -R 0777 /fluentd/etc/
 
 # Copy plugins
 COPY plugins /fluentd/plugins/
