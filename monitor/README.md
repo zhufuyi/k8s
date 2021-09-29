@@ -32,7 +32,7 @@ kubectl apple -f kube-monitor/8_grafana
 kubectl get pod -n monitoring
 ```
 
-安装完成后，访问prometheus(例如http://<ip>:30990)，检查所有targets的状态是否都是up
+安装完成后，访问prometheus(例如 http://节点ip:30990 )，检查所有targets的状态是否都是up
 
 参考：
 
