@@ -52,9 +52,12 @@ kubectl get pod -n monitoring
 
 > docker exec -it grafana bash
 
-(2) 在容器安装插件devopsprodigy-kubegraf-app
+(2) 在容器安装插件kubegraf和饼图插件
 
-> grafana-cli plugins install devopsprodigy-kubegraf-app
+```bash
+grafana-cli plugins install devopsprodigy-kubegraf-app
+grafana-cli plugins install grafana-piechart-panel
+```
 
 (3) 重启grafana
 
