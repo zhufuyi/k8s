@@ -1,0 +1,2 @@
+*.lock linguist-language=YAML
+*.rb linguist-language=YAML
